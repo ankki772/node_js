@@ -1,5 +1,5 @@
-require('dotenv').config;
-const express = require('express');
+import { config } from 'dotenv';
+import express from 'express'; // module js supports asynchronous importing of modules 
 const app = express();
 const port = process.env.PORT || 4000;
 
@@ -9,4 +9,5 @@ app.get('/',(req,res)=>{
 
 app.listen(port, () => {
 console.log(`app listing on localhost:${port}`);
+
 })
